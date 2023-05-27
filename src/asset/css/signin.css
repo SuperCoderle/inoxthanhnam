@@ -1,0 +1,125 @@
+.form {
+    width: 920px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 45px 65px;
+}
+
+.form-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    border-radius: 40px;
+}
+
+.form-left {
+    width: 50%;
+}
+
+.form-padding {
+    width: 210px;
+    height: 210px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 210px;
+    position: relative;
+}
+
+.form-img {
+    max-width: 100%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-right {
+    line-height: 26px;
+    width: 50%;
+}
+
+.form-padding-right {
+    padding:  0 25px;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-submit-btn {
+    background: #1fcc44;
+    cursor: pointer;
+}
+
+.form-submit-btn:hover {
+    background: #ff3f70;
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    height: 55px;
+    border-radius: 20px;
+    border: none;
+    background: #f2f2f2;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+    outline: none;
+}
+
+.login-form input::after {
+    position: absolute;
+    content: "a***";
+}
+
+.login-form #error {
+    padding: 10px;
+    color: red;
+}
+
+.login-form button {
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0;
+}
+
+@media (max-width: 640px) {
+    .form {
+        width: 100%;
+        height: 500px;
+        margin: 50px auto;
+        padding: 45px 15px;
+    }
+
+    .form-box {
+        display: block;
+    }
+
+    .form-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-right {
+        width: 100%;
+    }
+
+    .form-padding-right {
+        padding: 0 10px;
+    }
+}
+
